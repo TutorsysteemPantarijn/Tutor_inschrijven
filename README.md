@@ -1,2 +1,2 @@
 # Tutor_inschrijven
-Website waar je je kunt opgeven voor een tutor
+Website waarop je je kunt opgeven voor een tutor
