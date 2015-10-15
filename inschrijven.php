@@ -21,7 +21,7 @@ if (!$conn) {
 }
 
 // Error geven als de klas-string niet voldoet aan regex-pattroon
-if (!preg_match("/a?\d(g|v|h|m)\d/g", $klas)) {
+if (!preg_match("/a?\d(g|v|h|m|hv|mh)\d/g", $klas)) {
     header("HTTP/1.1 400 Bad Request");
     die("ERROR: Ongeldige klas");
 }
