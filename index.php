@@ -9,11 +9,11 @@
     <body>
         <form action="#" method="post">
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <input class="mdl-textfield__input" type="text" id="usr" name="usr" aria-required="true"/>
+                <input class="mdl-textfield__input" type="text" id="usr" name="usr" required/>
                 <label class="mdl-textfield__label" for="usr">Leerlingnummer...</label>
             </div><br />
             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <input class="mdl-textfield__input" type="password" id="pass" name="pass" aria-required="true"/>
+                <input class="mdl-textfield__input" type="password" id="pass" name="pass" required/>
                 <label class="mdl-textfield__label" for="pass">Wachtwoord...</label>
             </div><br />
             <div>
