@@ -1,45 +1,24 @@
-<!doctype html>
 <html>
     <head>
-        <script src="jquery.js"></script>
-        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,200,100' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
-        <link href="style.css" rel='stylesheet' type='text/css'>
+        <!-- MDL -->
+        <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.cyan-amber.min.css" />
+        <script src="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.min.js"></script>
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="styles.css" />
     </head>
     <body>
-        <div id="header">
-            <h1>Tutoren Pantarijn</h1>
-        </div>
-        <div id="content">
-            <h1>Inschrijven voor tutor</h1>
-            <input id="naam" placeholder="Je naam">
-            <input id="klas" placeholder="Je klas">
-            <input id="mentor" placeholder="Je mentor">
-            <input id="vak" placeholder="Vak">
-            <button id="btn">Inschrijven</button>
-        </div>
-        <script>
-        btn.click(function() {
-            var data = {
-                naam: naam.value,
-                klas: klas.value,
-                mentor: mentor.value,
-                vak: vak.value
-            }
-            $.ajax({
-                type: "POST",
-                url: "inschrijven.php",
-                data: data,
-                success: function() {
-                    // Ingeschreven
-                },
-                error: function(response) {
-                    // inschrijven.php geeft een error, dus de gegevens zijn incompleet/onjuist of de verbinding is instabiel
-                    // Foutmelding laten zien in console:
-                    console.log(response.responseText);
-                }
-            });
-        });
-        </script>
+        <form action="#" method="post">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="usr" name="usr" aria-required="true"/>
+                <label class="mdl-textfield__label" for="usr">Leerlingnummer...</label>
+            </div><br />
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="password" id="pass" name="pass" aria-required="true"/>
+                <label class="mdl-textfield__label" for="pass">Wachtwoord...</label>
+            </div><br />
+            <div>
+                <input class="mdl-button mdl-js-button mdl-button--primary" type="submit" value="login"/>
+            </div>
+        </form>
     </body>
 </html>
